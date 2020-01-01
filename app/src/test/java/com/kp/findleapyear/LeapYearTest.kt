@@ -18,6 +18,6 @@ class LeapYearTest {
 
 
     private fun isLeapYear(year: Int): Boolean {
-        return year == 2008
+        return year % 4 == 0
     }
 }
