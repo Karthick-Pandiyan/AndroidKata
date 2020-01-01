@@ -11,6 +11,12 @@ class LeapYearTest {
         Assert.assertFalse(isLeapYear(2019))
     }
 
+    @Test
+    fun `Should find the given year is leap year, Year = 2008`(){
+        Assert.assertTrue(isLeapYear(2008))
+    }
+
+
     private fun isLeapYear(year: Int): Boolean {
         return year == 2008
     }
