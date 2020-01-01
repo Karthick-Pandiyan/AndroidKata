@@ -26,6 +26,11 @@ class LeapYearTest {
         Assert.assertFalse(isLeapYear(1900))
     }
 
+    @Test
+    fun `Should find the given year is leap year as its divisible by 400, Year = 2000`(){
+        Assert.assertTrue(isLeapYear(2000))
+    }
+
     private fun isLeapYear(year: Int): Boolean {
         return isDivisibleBy4ButNotBy100(year) || year % 400 == 0
     }
