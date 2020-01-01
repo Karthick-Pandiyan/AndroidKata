@@ -22,7 +22,7 @@ class LeapYearTest {
     }
 
     @Test
-    fun `Should find the given year is leap year, Year = 1900`(){
+    fun `Should find the given year is not leap year, Year = 1900`(){
         Assert.assertFalse(isLeapYear(1900))
     }
 
