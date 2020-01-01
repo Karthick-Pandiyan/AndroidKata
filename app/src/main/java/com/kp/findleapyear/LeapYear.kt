@@ -2,7 +2,7 @@ package com.kp.findleapyear
 
 class LeapYear(private val year: Int) {
 
-    private fun isLeapYear(): Boolean {
+    fun isLeapYear(): Boolean {
         return isDivisibleBy4ButNotBy100() || isDivisibleBy400()
     }
 
