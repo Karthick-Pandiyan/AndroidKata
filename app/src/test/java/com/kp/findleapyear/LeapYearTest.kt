@@ -27,6 +27,8 @@ class LeapYearTest {
     }
 
     private fun isLeapYear(year: Int): Boolean {
-        return year % 4 == 0 && year % 100 != 0
+        return isDivisibleBy4ButNotBy100(year)
     }
+
+    private fun isDivisibleBy4ButNotBy100(year: Int) = year % 4 == 0 && year % 100 != 0
 }
